@@ -15,14 +15,14 @@ L'architecture repose sur **6 piliers stratégiques** :
 
 ## Structure du Projet
 
-```markdown
-# 🧭 Boussole S&E Pro : Système Automatisé de Suivi-Évaluation
+
+# Boussole S&E Pro : Système Automatisé de Suivi-Évaluation
 
 **Boussole S&E Pro** est une plateforme intelligente de monitoring humanitaire et de développement. Elle permet de collecter automatiquement des données via des sources externes (comme HDX), de valider la qualité des données, de générer des analyses d'impact financier et de produire des rapports PDF professionnels archivables.
 
 ---
 
-## 🚀 Fonctionnalités Clés
+## Fonctionnalités Clés
 
 * **Veille Stratégique Automatisée** : Collecte de données en temps réel via un scraper intégré pour garantir la crédibilité des sources.
 * **Validation de Données** : Module de Data Quality (`validators.py`) pour filtrer les données aberrantes ou corrompues avant stockage.
@@ -32,7 +32,7 @@ L'architecture repose sur **6 piliers stratégiques** :
 
 ---
 
-## 📂 Structure du Projet
+## Structure du Projet
 
 ```text
 SUIVI_EVALUATION_APP/
@@ -47,6 +47,7 @@ SUIVI_EVALUATION_APP/
 ├── dashboard.py        # Interface utilisateur Streamlit (Frontend)
 ├── requirements.txt    # Dépendances du projet
 └── setup_mac.sh        # Script d'installation rapide
+
 ```
 
 ### Installation & Lancement
