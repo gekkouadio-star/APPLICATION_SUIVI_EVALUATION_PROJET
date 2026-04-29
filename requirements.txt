@@ -1,0 +1,24 @@
+# --- Web & API ---
+fastapi
+uvicorn
+requests
+
+# --- Scraping (Automated) ---
+selenium
+undetected-chromedriver
+
+# --- Base de Données ---
+sqlalchemy
+
+# --- Analyse de Données (INDISPENSABLE pour Streamlit) ---
+pandas
+
+# --- Génération de Rapports (PDF) ---
+weasyprint
+jinja2
+
+# --- Interface Utilisateur ---
+streamlit
+
+# --- Utilitaires ---
+python-dotenv

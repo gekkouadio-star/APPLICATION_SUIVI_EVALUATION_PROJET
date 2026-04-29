@@ -1,0 +1,26 @@
+# --- Environnement Virtuel ---
+venv/
+.env
+__pycache__/
+*.pyc
+
+# --- Base de données Locale ---
+# On ne suit pas la base SQLite car elle contient tes tests locaux
+data/suivi_evaluation.db
+*.db
+*.sqlite3
+
+# --- Sorties et Rapports ---
+# On évite d'envoyer les PDF générés pour ne pas encombrer le dépôt
+outputs/archives/*.pdf
+outputs/reports/*.pdf
+
+# --- Système et IDE ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Selenium / Logs ---
+geckodriver.log
+ghostdriver.log
+*.log
