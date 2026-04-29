@@ -15,18 +15,38 @@ L'architecture repose sur **6 piliers stratégiques** :
 
 ## Structure du Projet
 
+```markdown
+# 🧭 Boussole S&E Pro : Système Automatisé de Suivi-Évaluation
+
+**Boussole S&E Pro** est une plateforme intelligente de monitoring humanitaire et de développement. Elle permet de collecter automatiquement des données via des sources externes (comme HDX), de valider la qualité des données, de générer des analyses d'impact financier et de produire des rapports PDF professionnels archivables.
+
+---
+
+## 🚀 Fonctionnalités Clés
+
+* **Veille Stratégique Automatisée** : Collecte de données en temps réel via un scraper intégré pour garantir la crédibilité des sources.
+* **Validation de Données** : Module de Data Quality (`validators.py`) pour filtrer les données aberrantes ou corrompues avant stockage.
+* **Tableau de Bord Dynamique** : Interface Streamlit moderne avec indicateurs de performance (KPIs) et graphiques d'évolution.
+* **Génération de Rapports PDF** : Création automatique de rapports détaillés incluant tableaux de bord et graphiques de performance via FPDF.
+* **Gestion des Archives** : Système d'archivage chronologique avec menu de sélection épuré (selectbox) pour consulter l'historique sans encombrer l'interface.
+
+---
+
+## 📂 Structure du Projet
+
 ```text
-suivi_evaluation_app/
+SUIVI_EVALUATION_APP/
 ├── app/
-│   ├── database/       # Gestion SQL (Modèles & Connexion)
-│   ├── services/       # Intelligence (Analyse & Capitalisation)
-│   ├── utils/          # Technique (Scraper & Validateurs)
-│   ├── pdf_reports/    # Génération PDF (WeasyPrint)
-│   └── main.py         # Chef d'orchestre du cycle complet
-├── docs/               # Documentation stratégique
-├── outputs/            # Rapports générés (Dernier cri & Archives)
-├── setup_mac.sh        # Script d'installation automatique
-└── .env                # Configuration des accès et sources
+│   ├── database/       # Gestion de la base de données SQL (Models, Session)
+│   ├── pdf_reports/    # Moteur de génération des rapports PDF (generator.py)
+│   ├── services/       # Logique métier et capitalisation (Analyse d'impact)
+│   ├── utils/          # Outils : Scraper, Validateurs, Générateurs de graphiques
+│   └── main.py         # Script principal de traitement (Backend)
+├── outputs/            # Dossier de sortie des PDF et images temporaires
+│   └── archives/       # Dossier de stockage des rapports historiques
+├── dashboard.py        # Interface utilisateur Streamlit (Frontend)
+├── requirements.txt    # Dépendances du projet
+└── setup_mac.sh        # Script d'installation rapide
 ```
 
 ### Installation & Lancement
